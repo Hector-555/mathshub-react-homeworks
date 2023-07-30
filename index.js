@@ -12,4 +12,4 @@ function isPrime(number) {
   }
 }
 
-console.log(isPrime(5));
+console.log(isPrime(process.argv[2]));

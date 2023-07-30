@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+/* Стилистика тегов */
+h1 {
+  color: red;
+  text-align: center;
+  font-size: 35px;
+}
+
+.main-container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 25px;
+}
+
+.hobby {
+  font-style: italic;
+  color: blue;
+}
+
+q {
+  font-style: italic;
+  font-size: 20px;
+}

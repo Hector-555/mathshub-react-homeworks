@@ -1,0 +1,46 @@
+.add-new-song {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.add-new-song__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-new-song__item {
+    padding: 30px 0;
+    height: 30px;
+}
+
+.add-new-song__item input,
+.add-new-song__item select {
+    height: 30px;
+    border: 1px solid rgb(102, 102, 102);
+    border-radius: 5px;
+    width: 200px;
+}
+
+.add-new-song__item label {
+    display: none;
+}
+
+.add-new-song__button {
+    padding-top: 30px;
+    height: 33px;
+}
+
+.add-new-song__button button {
+    height: 33px;
+    background-color: rgb(0, 136, 255);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.add-new-song__button button:hover {
+    background-color: rgb(0, 68, 255);
+}

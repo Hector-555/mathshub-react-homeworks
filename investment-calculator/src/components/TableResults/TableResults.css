@@ -1,0 +1,14 @@
+.table-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    color: rgb(120, 225, 249);
+    font-size: 13px;
+}
+
+.table-container > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

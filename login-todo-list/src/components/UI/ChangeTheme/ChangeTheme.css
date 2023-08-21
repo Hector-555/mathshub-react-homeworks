@@ -1,0 +1,36 @@
+@media screen and (prefers-color-scheme: light) {
+  body:not(.darkTheme) {
+    background: #cccccc;
+    color: #333333;
+  }
+}
+
+body {
+  background: #333333;
+  color: #cccccc;
+}
+
+.btn {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: 1.05;
+}
+
+.btn-dark {
+  background-image: url(../../../icons/moon-icon.png);
+  background-repeat: no-repeat;
+  background-color: blanchedalmond;
+}
+
+.btn-light {
+  background-image: url(../../../icons/sun-icon.png);
+  background-repeat: no-repeat;
+  background-color: blanchedalmond;
+  margin-right: 5px;
+}

@@ -1,13 +1,15 @@
 import React from 'react';
-
-import Card from '../UI/Card/Card';
 import './Home.css';
+import TodoWrapper from "../TodoWrapper/TodoWrapper";
 
 function Home() {
   return (
-    <Card className='home'>
-      <h1>Привет еще раз! ;)</h1>
-    </Card>
+    <>
+      <div className="home">
+        <h1>Список задач</h1>
+      </div>
+      <TodoWrapper />
+    </>
   );
 }
 

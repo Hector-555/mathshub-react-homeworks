@@ -1,8 +1,9 @@
 .packages-list-wrapper {
     padding: 1rem;
-    border: 2px solid red;
+    border: 2px solid green;
     border-radius: 5px;
     display: flex;
+    margin-bottom: 10px;
 }
 
 .packages-list-wrapper p {
@@ -16,6 +17,5 @@
 }
 
 .package-item-wrapper {
-    border: 1px solid green;
-    width: 250px;
+    width: 290px;
 }

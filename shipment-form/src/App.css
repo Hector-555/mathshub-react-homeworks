@@ -40,3 +40,32 @@
 .read-the-docs {
   color: #888;
 }
+
+h2 {
+  font-size: 23px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.label-wrapper {
+  width: 350px;
+  display: grid;
+}
+
+.label-wrapper input {
+  font-size: 15px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.label-wrapper label {
+  font-style: italic;
+  margin-left: 5px;
+}

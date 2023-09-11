@@ -1,12 +1,15 @@
-import React from 'react'
-import './App.css'
+import React from "react";
+import "./App.css";
 import SendingForm from "./SendingForm";
+import PackagesList from "./PackagesList";
 
 function App() {
-
   return (
-    <SendingForm />
-  )
+    <>
+      <SendingForm />
+      <PackagesList />
+    </>
+  );
 }
 
-export default App
+export default App;

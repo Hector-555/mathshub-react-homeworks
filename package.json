@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "formik": "^2.4.4",
+    "yup": "^1.2.0"
+  }
+}

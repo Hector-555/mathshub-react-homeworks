@@ -11,17 +11,13 @@
   margin: 0 auto;
 }
 
-.nav-container img {
-  width: 60px;
-  height: 60px;
-}
-
 .nav__menu-btn {
   height: 60px;
   border: none;
   margin: 35px 0;
   background: none;
   cursor: pointer;
+  position: relative;
 }
 
 .switch-container {

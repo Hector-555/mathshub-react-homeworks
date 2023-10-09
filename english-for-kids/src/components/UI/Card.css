@@ -4,6 +4,7 @@
     perspective: 1500px;
     -moz-perspective: 1500px;
     position: relative;
+    cursor: pointer;
 }
 
 .card-side {
@@ -23,14 +24,6 @@
 
 .card-side-back {
     transform: rotateY(180deg);
-}
-
-.card-container:hover .card-side-front {
-    transform: rotateY(180deg);
-}
-
-.card-container:hover .card-side-back {
-    transform: rotateY(0deg);
 }
 
 .card-container__img {

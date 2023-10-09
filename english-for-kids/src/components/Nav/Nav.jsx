@@ -1,24 +1,46 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { motion, AnimatePresence } from "framer-motion";
 import "./Nav.css";
 import burger from "./icons/Rectangle.png";
+import NavMenu from "./NavMenu";
 
 function Nav() {
-  return (
-    <div className="nav-container">
-      <button type="button" className="nav__menu-btn">
-        <img src={burger} alt="menu" />
-      </button>
+  const dispatch = useDispatch();
+  const show = useSelector((state) => state.showMenu);
 
-      <div className="switch-container">
-        <span className="switch-train" >TRAIN</span>
-        <span className="switch-play">PLAY</span>
-        <label id="switch" className="switch">
-          <input type="checkbox" id="slider" />
-          <span className="slider round" />
-        </label>
+  const toggleShowMenu = () => {
+    dispatch({ type: "toggle" });
+  };
+
+  return (
+    <>
+      <AnimatePresence>
+        {show && <NavMenu handleClose={toggleShowMenu} />}
+      </AnimatePresence>
+
+      <div className="nav-container">
+        <motion.button
+          type="button"
+          className="nav__menu-btn"
+          onClick={toggleShowMenu}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <img src={burger} alt="menu" />
+        </motion.button>
+
+        <div className="switch-container">
+          <span className="switch-train">TRAIN</span>
+          <span className="switch-play">PLAY</span>
+          <label id="switch" className="switch">
+            <input type="checkbox" id="slider" />
+            <span className="slider round" />
+          </label>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

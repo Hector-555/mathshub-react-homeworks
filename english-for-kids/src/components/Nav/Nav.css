@@ -6,7 +6,9 @@
 .nav-container {
   display: flex;
   justify-content: space-between;
+  width: 1008px;
   height: 130px;
+  margin: 0 auto;
 }
 
 .nav-container img {

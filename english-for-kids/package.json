@@ -1,5 +1,5 @@
 {
-  "name": "english-for-kids",
+  "name": "final-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,13 +11,14 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.16.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react-swc": "^3.3.2",
-    "eslint": "^8.51.0",
+    "eslint": "^8.50.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.28.1",

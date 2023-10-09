@@ -26,14 +26,6 @@
   transform: rotateY(180deg);
 }
 
-/* .card-container:hover .card-side-front {
-      transform: rotateY(180deg);
-  }
-  
-  .card-container:hover .card-side-back {
-      transform: rotateY(0deg);
-  } */
-
 .card-container__img {
   width: 318px;
   height: 215px;

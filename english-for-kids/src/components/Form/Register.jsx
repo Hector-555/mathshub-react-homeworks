@@ -13,7 +13,6 @@ function Register() {
     const auth = getAuth();
     createUserWithEmailAndPassword(auth, email, password)
       .then(({ user }) => {
-        console.log(user);
         dispatch(
           userActions.setUser({
             email: user.email,
@@ -23,7 +22,6 @@ function Register() {
         );
         navigate('/')
       })
-      .catch(console.error);
   };
 
   return (

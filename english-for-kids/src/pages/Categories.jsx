@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "../components/UI/Card";
 import categories from "../data/categories/categories";
-import testImg from "../components/UI/icons/cat.jpg";
 import rotate from "../components/UI/icons/rotate-btn.png";
 
 function Categories() {
@@ -11,7 +10,7 @@ function Categories() {
         {categories.map((category) => (
           <div className="card-container" key={category.id}>
             <div className="card-side card-side-front">
-              <img src={testImg} alt="" className="card-container__img" />
+              <img src={category.image} alt="" className="card-container__img" />
               <h3 className="card-container__title">{category.title}</h3>
               <button type="button" className="card-container__btn">
                 <img src={rotate} alt="rotate" />
@@ -19,8 +18,8 @@ function Categories() {
             </div>
 
             <div className="card-side card-side-back">
-              <img src={testImg} alt="" className="card-container__img" />
-              <h3 className="card-container__title">Кот</h3>
+              <img src={category.image} alt="" className="card-container__img" />
+              <h3 className="card-container__title">{category.title}</h3>
             </div>
           </div>
         ))}

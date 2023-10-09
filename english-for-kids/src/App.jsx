@@ -9,6 +9,7 @@ import Clothes from "./pages/Clothes";
 import Emotions from "./pages/Emotions";
 import ActionsA from "./pages/ActionsA";
 import ActionsB from "./pages/ActionsB";
+import Transport from "./pages/Transport";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "actions-2",
         element: <ActionsB />,
+      },
+      {
+        path: "transport",
+        element: <Transport />,
       },
     ],
   },

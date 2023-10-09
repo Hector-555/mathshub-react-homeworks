@@ -1,29 +1,58 @@
 import React from "react";
-import Card from "../components/UI/Card";
+import CardItem from "../components/UI/CardItem";
 import clothes from "../data/clothes/clothes";
-import rotate from "../components/UI/icons/rotate-btn.png";
 
 function Clothes() {
   return (
     <div className="main-container">
-      {clothes.map((thing) => (
-        <Card>
-          <div className="card-container">
-            <div className="card-side card-side-front">
-              <img src={thing.image} alt="" className="card-container__img" />
-              <h3 className="card-container__title">{thing.title}</h3>
-              <button type="button" className="card-container__btn">
-                <img src={rotate} alt="rotate" />
-              </button>
-            </div>
-
-            <div className="card-side card-side-back">
-              <img src={thing.image} alt="" className="card-container__img" />
-              <h3 className="card-container__title">{thing.titleRus}</h3>
-            </div>
-          </div>
-        </Card>
-      ))}
+      <CardItem
+        title={clothes[0].title}
+        image={clothes[0].image}
+        titleRus={clothes[0].titleRus}
+        audio={clothes[0].audio}
+      />
+      <CardItem
+        title={clothes[1].title}
+        image={clothes[1].image}
+        titleRus={clothes[1].titleRus}
+        audio={clothes[1].audio}
+      />
+      <CardItem
+        title={clothes[2].title}
+        image={clothes[2].image}
+        titleRus={clothes[2].titleRus}
+        audio={clothes[2].audio}
+      />
+      <CardItem
+        title={clothes[3].title}
+        image={clothes[3].image}
+        titleRus={clothes[3].titleRus}
+        audio={clothes[3].audio}
+      />
+      <CardItem
+        title={clothes[4].title}
+        image={clothes[4].image}
+        titleRus={clothes[4].titleRus}
+        audio={clothes[4].audio}
+      />
+      <CardItem
+        title={clothes[5].title}
+        image={clothes[5].image}
+        titleRus={clothes[5].titleRus}
+        audio={clothes[5].audio}
+      />
+      <CardItem
+        title={clothes[6].title}
+        image={clothes[6].image}
+        titleRus={clothes[6].titleRus}
+        audio={clothes[6].audio}
+      />
+      <CardItem
+        title={clothes[7].title}
+        image={clothes[7].image}
+        titleRus={clothes[7].titleRus}
+        audio={clothes[7].audio}
+      />
     </div>
   );
 }

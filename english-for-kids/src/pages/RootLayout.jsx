@@ -4,12 +4,12 @@ import Nav from '../components/Nav/Nav';
 
 function RootLayout() {
   return (
-    <>
+    <div className='main-wrapper'>
       <Nav />
       <main>
         <Outlet />
       </main>
-    </>
+    </div>
   );
 }
 

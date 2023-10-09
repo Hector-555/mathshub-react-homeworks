@@ -1,29 +1,58 @@
 import React from "react";
-import Card from "../components/UI/Card";
+import CardItem from "../components/UI/CardItem";
 import animalsA from "../data/animalsA/animalsA";
-import rotate from "../components/UI/icons/rotate-btn.png";
 
 function AnimalsA() {
   return (
     <div className="main-container">
-      {animalsA.map((animals) => (
-        <Card>
-          <div className="card-container">
-            <div className="card-side card-side-front">
-              <img src={animals.image} alt="" className="card-container__img" />
-              <h3 className="card-container__title">{animals.title}</h3>
-              <button type="button" className="card-container__btn">
-                <img src={rotate} alt="rotate" />
-              </button>
-            </div>
-
-            <div className="card-side card-side-back">
-              <img src={animals.image} alt="" className="card-container__img" />
-              <h3 className="card-container__title">{animals.titleRus}</h3>
-            </div>
-          </div>
-        </Card>
-      ))}
+      <CardItem
+        title={animalsA[0].title}
+        image={animalsA[0].image}
+        titleRus={animalsA[0].titleRus}
+        audio={animalsA[0].audio}
+      />
+      <CardItem
+        title={animalsA[1].title}
+        image={animalsA[1].image}
+        titleRus={animalsA[1].titleRus}
+        audio={animalsA[1].audio}
+      />
+      <CardItem
+        title={animalsA[2].title}
+        image={animalsA[2].image}
+        titleRus={animalsA[2].titleRus}
+        audio={animalsA[2].audio}
+      />
+      <CardItem
+        title={animalsA[3].title}
+        image={animalsA[3].image}
+        titleRus={animalsA[3].titleRus}
+        audio={animalsA[3].audio}
+      />
+      <CardItem
+        title={animalsA[4].title}
+        image={animalsA[4].image}
+        titleRus={animalsA[4].titleRus}
+        audio={animalsA[4].audio}
+      />
+      <CardItem
+        title={animalsA[5].title}
+        image={animalsA[5].image}
+        titleRus={animalsA[5].titleRus}
+        audio={animalsA[5].audio}
+      />
+      <CardItem
+        title={animalsA[6].title}
+        image={animalsA[6].image}
+        titleRus={animalsA[6].titleRus}
+        audio={animalsA[6].audio}
+      />
+      <CardItem
+        title={animalsA[7].title}
+        image={animalsA[7].image}
+        titleRus={animalsA[7].titleRus}
+        audio={animalsA[7].audio}
+      />
     </div>
   );
 }

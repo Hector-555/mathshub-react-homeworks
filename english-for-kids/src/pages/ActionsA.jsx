@@ -4,6 +4,10 @@ import actionsA from "../data/actionsA/actionsA";
 
 function ActionsA() {
   return (
+    <>
+    <div className="title-wrapper">
+        <h2>Action (set A)</h2>
+      </div>
     <div className="main-container">
       <CardItem
         title={actionsA[0].title}
@@ -54,6 +58,8 @@ function ActionsA() {
         audio={actionsA[7].audio}
       />
     </div>
+    </>
+    
   );
 }
 

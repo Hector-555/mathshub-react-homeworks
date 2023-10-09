@@ -17,23 +17,61 @@ import smileAudio from "./audio/smile.mp3";
 import surprisedAudio from "./audio/surprised.mp3";
 
 const emotions = [
-  { title: "Angry", image: angry, titleRus: "Сердиться", audio: angryAudio },
-  { title: "Cry", image: cry, titleRus: "Плакать", audio: cryAudio },
-  { title: "Happy", image: happy, titleRus: "Счастливый", audio: happyAudio },
-  { title: "Laugh", image: laugh, titleRus: "Смеяться", audio: laughAudio },
-  { title: "Sad", image: sad, titleRus: "Грустить", audio: sadAudio },
+  {
+    title: "Angry",
+    image: angry,
+    titleRus: "Сердиться",
+    audio: angryAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Cry",
+    image: cry,
+    titleRus: "Плакать",
+    audio: cryAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Happy",
+    image: happy,
+    titleRus: "Счастливый",
+    audio: happyAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Laugh",
+    image: laugh,
+    titleRus: "Смеяться",
+    audio: laughAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Sad",
+    image: sad,
+    titleRus: "Грустить",
+    audio: sadAudio,
+    id: Math.random().toString(),
+  },
   {
     title: "Scared",
     image: scared,
     titleRus: "Испугаться",
     audio: scaredAudio,
+    id: Math.random().toString(),
   },
-  { title: "Smile", image: smile, titleRus: "Улыбаться", audio: smileAudio },
+  {
+    title: "Smile",
+    image: smile,
+    titleRus: "Улыбаться",
+    audio: smileAudio,
+    id: Math.random().toString(),
+  },
   {
     title: "Surprised",
     image: surprised,
     titleRus: "Удивиться",
     audio: surprisedAudio,
+    id: Math.random().toString(),
   },
 ];
 

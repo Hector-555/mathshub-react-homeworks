@@ -1,8 +1,11 @@
-import React from "react";
+import React from 'react';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import HomePage from './pages/HomePage';
+import LoginPage from './pages/LoginPage';
+import RegistrationPage from './pages/RegistrationPage';
+import './firebase'
 import "./App.css";
 import RootLayout from "./pages/RootLayout";
-import Home from "./pages/Home";
 import AnimalsA from "./pages/AnimalsA";
 import AnimalsB from "./pages/AnimalsB";
 import Clothes from "./pages/Clothes";
@@ -10,6 +13,7 @@ import Emotions from "./pages/Emotions";
 import ActionsA from "./pages/ActionsA";
 import ActionsB from "./pages/ActionsB";
 import Transport from "./pages/Transport";
+import Food from "./pages/Food";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +22,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />,
+        element: <HomePage />,
       },
       {
         path: "animals-1",
@@ -48,7 +52,19 @@ const router = createBrowserRouter([
         path: "transport",
         element: <Transport />,
       },
+      {
+        path: "food",
+        element: <Food />
+      },
     ],
+  },
+  {
+    path: "/login",
+    element: <LoginPage />
+  },
+  {
+    path: "/reg",
+    element: <RegistrationPage />
   },
 ]);
 

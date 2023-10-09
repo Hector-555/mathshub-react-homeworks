@@ -1,18 +1,10 @@
-/* eslint-disable default-param-last */
-import { createStore } from "redux";
+import { configureStore } from "@reduxjs/toolkit";
+import userSlice from "./userSlice";
 
-const initialState = { showMenu: false };
+const store = configureStore({
+    reducer: {
+        user: userSlice.reducer
+    }
+})
 
-const menuSlider = (state = initialState, action) => {
-  if (action.type === "toggle") {
-    return {
-      ...state,
-      showMenu: !state.showMenu,
-    };
-  }
-  return state;
-};
-
-const store = createStore(menuSlider);
-
-export default store;
+export default store

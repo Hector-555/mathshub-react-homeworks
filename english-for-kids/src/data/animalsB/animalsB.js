@@ -17,14 +17,62 @@ import sheepAudio from "./audio/sheep.mp3";
 import turtleAudio from "./audio/turtle.mp3";
 
 const animalsB = [
-  { title: "Giraffe", image: giraffe, titleRus: "Жираф", audio: giraffeAudio },
-  { title: "Horse", image: horse, titleRus: "Лошадь", audio: horseAudio },
-  { title: "Lion", image: lion, titleRus: "Лев", audio: lionAudio },
-  { title: "Mouse", image: mouse, titleRus: "Мышь", audio: mouseAudio },
-  { title: "Pig", image: pig, titleRus: "Свинья", audio: pigAudio },
-  { title: "Rabbit", image: rabbit, titleRus: "Кролик", audio: rabbitAudio },
-  { title: "Sheep", image: sheep, titleRus: "Овца", audio: sheepAudio },
-  { title: "Turtle", image: turtle, titleRus: "Черепаха", audio: turtleAudio },
+  {
+    title: "Giraffe",
+    image: giraffe,
+    titleRus: "Жираф",
+    audio: giraffeAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Horse",
+    image: horse,
+    titleRus: "Лошадь",
+    audio: horseAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Lion",
+    image: lion,
+    titleRus: "Лев",
+    audio: lionAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Mouse",
+    image: mouse,
+    titleRus: "Мышь",
+    audio: mouseAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Pig",
+    image: pig,
+    titleRus: "Свинья",
+    audio: pigAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Rabbit",
+    image: rabbit,
+    titleRus: "Кролик",
+    audio: rabbitAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Sheep",
+    image: sheep,
+    titleRus: "Овца",
+    audio: sheepAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Turtle",
+    image: turtle,
+    titleRus: "Черепаха",
+    audio: turtleAudio,
+    id: Math.random().toString(),
+  },
 ];
 
 export default animalsB;

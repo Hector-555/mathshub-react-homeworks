@@ -17,14 +17,62 @@ import swimAudio from "./audio/swim.mp3";
 import tiredAudio from "./audio/tired.mp3";
 
 const ActionsA = [
-  { title: "Play", image: play, titleRus: "Играть", audio: playAudio },
-  { title: "Point", image: point, titleRus: "Указывать", audio: pointAudio },
-  { title: "Ride", image: ride, titleRus: "Ездить", audio: rideAudio },
-  { title: "Run", image: run, titleRus: "Бегать", audio: runAudio },
-  { title: "Sing", image: sing, titleRus: "Петь", audio: singAudio },
-  { title: "Skip", image: skip, titleRus: "Скакать", audio: skipAudio },
-  { title: "Swim", image: swim, titleRus: "Плыть", audio: swimAudio },
-  { title: "Tired", image: tired, titleRus: "Устать", audio: tiredAudio },
+  {
+    title: "Play",
+    image: play,
+    titleRus: "Играть",
+    audio: playAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Point",
+    image: point,
+    titleRus: "Указывать",
+    audio: pointAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Ride",
+    image: ride,
+    titleRus: "Ездить",
+    audio: rideAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Run",
+    image: run,
+    titleRus: "Бегать",
+    audio: runAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Sing",
+    image: sing,
+    titleRus: "Петь",
+    audio: singAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Skip",
+    image: skip,
+    titleRus: "Скакать",
+    audio: skipAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Swim",
+    image: swim,
+    titleRus: "Плыть",
+    audio: swimAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Tired",
+    image: tired,
+    titleRus: "Устать",
+    audio: tiredAudio,
+    id: Math.random().toString(),
+  },
 ];
 
 export default ActionsA;

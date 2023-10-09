@@ -1,10 +1,8 @@
-/* eslint-disable react/destructuring-assignment */
-import React from "react";
 import "./Card.css";
 
 function Card(props) {
   return (
-    <div>{props.children}</div>
+    props.children
   )
 }
 

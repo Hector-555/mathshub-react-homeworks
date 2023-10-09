@@ -17,19 +17,62 @@ import fishAudio from "./audio/fish.mp3";
 import frogAudio from "./audio/frog.mp3";
 
 const animalsA = [
-  { title: "Bird", image: bird, titleRus: "Птица", audio: birdAudio },
-  { title: "Cat", image: cat, titleRus: "Кот", audio: catAudio },
-  { title: "Chicken", image: chick, titleRus: "Цыпленок", audio: chickAudio },
-  { title: "Hen", image: chicken, titleRus: "Курица", audio: chickenAudio },
-  { title: "Dog", image: dog, titleRus: "Собака", audio: dogAudio },
+  {
+    title: "Bird",
+    image: bird,
+    titleRus: "Птица",
+    audio: birdAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Cat",
+    image: cat,
+    titleRus: "Кот",
+    audio: catAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Chick",
+    image: chick,
+    titleRus: "Птенец",
+    audio: chickAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Chicken",
+    image: chicken,
+    titleRus: "Цыпленок",
+    audio: chickenAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Dog",
+    image: dog,
+    titleRus: "Собака",
+    audio: dogAudio,
+    id: Math.random().toString(),
+  },
   {
     title: "Dolphin",
     image: dolphin,
     titleRus: "Дельфин",
     audio: dolphinAudio,
+    id: Math.random().toString(),
   },
-  { title: "Fish", image: fish, titleRus: "Рыба", audio: fishAudio },
-  { title: "Frog", image: frog, titleRus: "Лягушка", audio: frogAudio },
+  {
+    title: "Fish",
+    image: fish,
+    titleRus: "Рыба",
+    audio: fishAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Frog",
+    image: frog,
+    titleRus: "Лягушка",
+    audio: frogAudio,
+    id: Math.random().toString(),
+  },
 ];
 
 export default animalsA;

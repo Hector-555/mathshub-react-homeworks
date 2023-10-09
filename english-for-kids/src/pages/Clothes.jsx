@@ -4,6 +4,10 @@ import clothes from "../data/clothes/clothes";
 
 function Clothes() {
   return (
+    <>
+    <div className="title-wrapper">
+        <h2>Clothes</h2>
+      </div>
     <div className="main-container">
       <CardItem
         title={clothes[0].title}
@@ -54,6 +58,8 @@ function Clothes() {
         audio={clothes[7].audio}
       />
     </div>
+    </>
+    
   );
 }
 

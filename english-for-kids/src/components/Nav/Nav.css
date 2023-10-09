@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'Roboto', sans-serif;
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  font-family: "Roboto", sans-serif;
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
-  width: 1008px;
+  max-width: 1008px;
   height: 130px;
   margin: 0 auto;
 }
@@ -20,27 +20,33 @@
   position: relative;
 }
 
-.switch-container {
-    margin: auto 0;
-    position: relative;
+.user-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
-.switch-train {
-  font-family: 'Roboto', sans-serif;
-  font-size: 13px;
-  color: #fff;
-  position: absolute;
-  transform: translate(6px, 10px);
-  z-index: 1;
-  display: none;
+.switch-container {
+  margin: auto 0;
+  position: relative;
 }
 
 .switch-play {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 13px;
   color: #fff;
   position: absolute;
-  transform: translate(37px, 10px);
+  transform: translate(8px, 10px);
+  z-index: 1;
+}
+
+.switch-train {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  transform: translate(35px, 10px);
   z-index: 1;
 }
 
@@ -107,4 +113,16 @@ input:checked + .slider:before {
 
 .display-none {
   display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .nav-container {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .nav-container {
+    margin: 0 20px;
+  }
 }

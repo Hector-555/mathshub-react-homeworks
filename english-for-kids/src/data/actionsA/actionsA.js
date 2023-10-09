@@ -17,14 +17,62 @@ import jumpAudio from "./audio/jump.mp3";
 import openAudio from "./audio/open.mp3";
 
 const ActionsA = [
-  { title: "Dance", image: dance, titleRus: "Танцевать", audio: danceAudio },
-  { title: "Dive", image: dive, titleRus: "Нырять", audio: diveAudio },
-  { title: "Draw", image: draw, titleRus: "Рисовать", audio: drawAudio },
-  { title: "Fish", image: fish, titleRus: "Рыбачить", audio: fishAudio },
-  { title: "Fly", image: fly, titleRus: "Летать", audio: flyAudio },
-  { title: "Hug", image: hug, titleRus: "Обнимать", audio: hugAudio },
-  { title: "Jump", image: jump, titleRus: "Прыгать", audio: jumpAudio },
-  { title: "Open", image: open, titleRus: "Открыть", audio: openAudio },
+  {
+    title: "Dance",
+    image: dance,
+    titleRus: "Танцевать",
+    audio: danceAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Dive",
+    image: dive,
+    titleRus: "Нырять",
+    audio: diveAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Draw",
+    image: draw,
+    titleRus: "Рисовать",
+    audio: drawAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Fish",
+    image: fish,
+    titleRus: "Рыбачить",
+    audio: fishAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Fly",
+    image: fly,
+    titleRus: "Летать",
+    audio: flyAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Hug",
+    image: hug,
+    titleRus: "Обнимать",
+    audio: hugAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Jump",
+    image: jump,
+    titleRus: "Прыгать",
+    audio: jumpAudio,
+    id: Math.random().toString(),
+  },
+  {
+    title: "Open",
+    image: open,
+    titleRus: "Открыть",
+    audio: openAudio,
+    id: Math.random().toString(),
+  },
 ];
 
 export default ActionsA;

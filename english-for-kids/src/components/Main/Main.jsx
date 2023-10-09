@@ -24,7 +24,9 @@ function Main() {
                 ? "actions-1"
                 : category.title === "Action (set B)"
                 ? "actions-2"
-                : "transport"
+                : category.title === "Transport"
+                ? "transport"
+                : "food"
             }
           >
             <div className="card-container" key={category.id}>
